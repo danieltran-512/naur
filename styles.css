@@ -125,7 +125,7 @@ button:hover{
 
 .pre-order-btn{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
 }
 
@@ -153,5 +153,11 @@ button:hover{
     .pre-order-btn{
         top: 50%;
         left: 25%;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .pre-order-btn{
+        top: 70%;
     }
 }
