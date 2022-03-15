@@ -44,7 +44,7 @@ a {
     font-family: 'Lexend Peta', sans-serif;
     transition: 0.5s;
     font-size: 40px;
-    color: white;
+    /* color: white; */
 }
 
 .logo:hover{
@@ -62,7 +62,7 @@ a {
 }
 
 .nav-container li a{
-    color: white;
+    /* color: white; */
     transition: 0.5s; /*Transition animation time*/
     font-size: 14px;
 }
@@ -85,9 +85,16 @@ a {
 
 /*Containers*/
 .one{
-    background-image: url('./images/product03\ copy.jpg');
+    background-image: url('./images/image04\ copy.jpg');
     background-size: cover;
     margin-top: -50px;
+}
+
+.one h1{
+    position: relative;
+    top: 37%;
+    left: 50%;
+    text-align: left;
 }
 
 .two{
@@ -119,12 +126,11 @@ button:hover{
 .pre-order-btn{
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
 }
 
-
 /*Responsive screen*/
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
     .nav-container{
         display: none;
     }
@@ -137,11 +143,15 @@ button:hover{
     }
 
     .one{
-        background-position: center;
+        background-position: left;
+    }
+
+    .one h1{
+        display: none;
     }
 
     .pre-order-btn{
         top: 50%;
-        left: 20%;
+        left: 25%;
     }
 }
