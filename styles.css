@@ -18,7 +18,7 @@ html, body{
 
 /*make the navigation bar stick to the top*/
 nav{
-    position:-webkit-sticky;
+    position:-webkit-sticky; /*For safari*/
     position: sticky;
     top: 0;
     z-index: 1000; /*make the nav bar stay on top of everything*/
@@ -98,7 +98,55 @@ a {
 }
 
 .two{
-    background-color: #8D9B6A;
+    background-color: #E8DFE0;
+    display: flex;
+}
+
+/*Split div into two columns*/
+.left-side-two, .right-side-two{
+    flex: 50%;
+}
+
+.second-title{
+    padding: 10px;
+    position: relative;
+    top: 20%;
+    float: right;
+    font-size: 4.7em;
+    text-align: right;
+    color: rgb(32, 32, 32);
+    width: fit-content;
+    transition: 0.5s;
+}
+
+/*hide the details of the element if the user doesn't hover on it*/
+.second-info{
+    display: none;
+}
+
+.two:hover .second-title, .left-side-two:hover .second-title{
+    font-size: 3.5em;
+}
+
+/*Display the content upon hovering*/
+.two:hover .second-info,.left-side-two:hover .second-info{
+    clear: both;
+    display: block;
+    position: relative;
+    top: 10%;
+    float: right;
+    padding: 1em;
+    width: 25em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: rgb(44, 44, 44);
+    text-align: right;
+}
+
+/*image for second container*/
+.right-side-two{
+    background-image: url('./images/product01.jpg');
+    background-size: cover;
 }
 
 .three{
@@ -132,9 +180,10 @@ button:hover{
 /*Responsive screen*/
 @media screen and (max-width: 650px){
     .nav-container{
-        display: none;
+        display: none; /*Hide navigation bar*/
     }
 
+    /*align the logo to the centre of the screen*/
     .logo{
         position: relative;
         margin-bottom: 0;
@@ -154,6 +203,28 @@ button:hover{
         top: 50%;
         left: 25%;
     }
+
+    .right-side-two{
+        display: none;
+    }
+
+    .second-title, .two:hover .second-title, .left-side-two:hover .second-title{
+        top: 0;
+        font-size: 3em;
+        position: absolute;
+        text-align: left;
+    }
+
+    .second-info, .two:hover .second-info,.left-side-two:hover .second-info{
+        position: absolute;
+        display: block;
+        width: fit-content;
+        padding: 10px;
+        letter-spacing: normal;
+        text-align: right;
+        top: 38%;
+    }
+
 }
 
 @media screen and (max-height: 500px){
