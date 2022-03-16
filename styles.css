@@ -219,10 +219,12 @@ button:hover{
         position: absolute;
         display: block;
         width: fit-content;
+        top: 38%;
         padding: 10px;
+        margin-left: 2em;
         letter-spacing: normal;
         text-align: right;
-        top: 38%;
+        font-size: 1.25em;
     }
 
 }
