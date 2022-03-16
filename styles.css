@@ -177,6 +177,10 @@ button:hover{
     left: 50%;
 }
 
+.advice{
+    display: none;
+}
+
 /*Responsive screen*/
 @media screen and (max-width: 650px){
     .nav-container{
@@ -187,7 +191,7 @@ button:hover{
     .logo{
         position: relative;
         margin-bottom: 0;
-        padding: 0;
+        padding: 10px;
         text-align: center;
     }
 
@@ -226,7 +230,17 @@ button:hover{
         text-align: right;
         font-size: 1.25em;
     }
-
+    
+    .advice{
+        display: block;
+        position: fixed;
+        margin: 0;
+        z-index: 101;
+        width: 100vw;
+        background-color: #8D9B6A;
+        text-align: center;
+        font-weight: 300;
+    }
 }
 
 @media screen and (max-height: 500px){
