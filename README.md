@@ -1,5 +1,6 @@
 # naur - an introduction
-_Disclaimer_: the product used in this project is completely fictional. \n
+_Disclaimer_: the product used in this project is completely fictional. 
+
 naur is a perfume website that sells a special scent of perfume that marks a remarkable milestone in the perfume-making industry. The website focuses on motion and graphics, large text, and is responsive to all screen size.
 
 This website is just purely HTML and CSS, and the purpose of creating this project is to explore the use of CSS in modern web design.
