@@ -477,12 +477,13 @@ footer a {
 
     .twinkie-bottle{
         top:0;
+        width: 80%;
     }
 
     .seductress-bottle{
         width: 50%;
-        top: 10%;
-        left: 0%;
+        top: 5%;
+        left: 30%;
     }
 
     .five h1{
@@ -490,13 +491,13 @@ footer a {
         left: 0;
         padding-left: 10px;
         font-size: 2em;
-        text-align: center;
+        text-align: left;
         z-index: 100;
     }
 
     .five button{
-        top: 82%;
-        left: 15%;
+        top: 90%;
+        left: 2%;
     }
 
     .mobile-menu{
@@ -521,7 +522,7 @@ footer a {
         position: absolute;
         display: block;
         width: 23em;
-        top: 45%;
+        top: 50%;
         padding: 10px;
         margin-left: 0;
         letter-spacing: normal;
@@ -536,7 +537,8 @@ footer a {
 
     .five h1{
         font-size: 2em;
-        left: 0;
+        left: 40%;
+        width: 12em;
         text-align: left;
     }
 }
