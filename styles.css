@@ -325,7 +325,6 @@ button:hover{
     display: inline-block;
 }
 
-
 .socials li{
     list-style: none;
     border: 1px solid rgb(255, 255, 255);
@@ -333,6 +332,23 @@ button:hover{
     margin: 10px;
     padding: 10px;
     transition: 0.5s;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0.5em;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
+.mobile-menu{
+    display: none;
 }
 
 .socials li:hover, .socials li:hover>a, .socials li:hover a:hover{
@@ -351,6 +367,7 @@ button:hover{
     right: 0;
     padding: 10px;
     font-size: 0.7em;
+    text-align: right;
 }
 
 .not-found{
@@ -458,25 +475,32 @@ button:hover{
         display: none;
     }
 
+    .twinkie-bottle{
+        top:0;
+    }
+
     .seductress-bottle{
         width: 50%;
-        top: 0;
-        left: 20%;
+        top: 10%;
+        left: 0%;
     }
 
     .five h1{
-        top: 60%;
+        top: 65%;
         left: 0;
         padding-left: 10px;
         font-size: 2em;
-        text-align: right;
+        text-align: center;
         z-index: 100;
-        width: 12em;
     }
 
     .five button{
-        top: 78%;
+        top: 82%;
         left: 15%;
+    }
+
+    .mobile-menu{
+        display: block;
     }
 }
 
@@ -512,7 +536,7 @@ button:hover{
 
     .five h1{
         font-size: 2em;
-        width: auto;
         left: 0;
+        text-align: left;
     }
 }
