@@ -382,7 +382,7 @@ footer a {
 }
 
 /*Responsive screen*/
-@media screen and (max-width: 650px){
+@media screen and (max-width: 760px){
 
     .advice{
         display: block;
