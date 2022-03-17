@@ -81,6 +81,7 @@ a {
     width: 100%;
     height: 100vh;
     top: 0;
+    overflow: hidden; /*make sure the content stays inside the parent element*/
 }
 
 /*Containers*/
@@ -153,6 +154,139 @@ a {
     background-color: #DAB692;
 }
 
+.three img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 4;
+    transition: 1s;
+}
+
+.three img:first-child:hover{
+    opacity: 0;
+}
+
+.three img:first-child{
+    z-index: 5;
+    top: 10%;
+}
+
+.three img:last-child{
+   z-index: 3;
+}
+
+.three h1{
+    z-index: 5;
+    position: relative;
+    left: 45%;
+    top: 30%;
+    color: white;
+    font-family: 'Lexend Peta', sans-serif;
+    text-transform: uppercase;
+}
+
+.three p {
+    z-index: 5;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    width: 20em;
+    color: white;
+    text-align: justify;
+}
+
+.four{
+    background-color: #8D9B6A;
+    text-align: center;
+}
+
+.four h1, .four p{
+    width: 50%;
+    position: relative;
+    top: 35%;
+    left: 25%;
+}
+
+.five{
+    background-color: #E8DFE0;
+}
+
+.twinkie-bottle{
+    width: 60%;
+    top: 28%;
+    height: auto;
+    z-index: 5;
+    position: absolute;
+    transform: rotate(20deg);
+    left: 55%;
+}
+
+.twinkie-bottle-2{
+    width: 30%;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    transform: rotate(20deg);
+}
+
+.seductress-bottle{
+    width: 20%;
+    height: auto;
+    transform: rotate(-15deg);
+    z-index: 3;
+    position: absolute;
+    left: 10%;
+}
+
+.five h1{
+    position: relative;
+    top: 30%;
+    z-index: 4;
+    left: 25%;
+    text-transform: lowercase;
+    font-size: 4em;
+    width: 10em;
+    text-align: center;
+}
+
+.five button{
+    position: absolute;
+    top: 63%;
+    left: 38%;
+    z-index: 6;
+}
+
+footer{
+    background-color: #8D9B6A;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+footer input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    width: 400px;
+    height: fit-content;
+    color: white;
+    font-size: 2em;
+}
+
+footer input:focus {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+footer input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
 /*Button style*/
 button{
     color: rgb(255, 255, 255);
@@ -181,18 +315,83 @@ button:hover{
     display: none;
 }
 
+.sign-up{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2em;
+}
+
+.socials > li{
+    display: inline-block;
+}
+
+
+.socials li{
+    list-style: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.socials li:hover, .socials li:hover>a, .socials li:hover a:hover{
+    background-color: white;
+    color: #8D9B6A;
+}
+
+.socials li a{
+    color: white;
+    transition: 0.5s;
+}
+
+.author{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+.not-found{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("./images/image05.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 /*Responsive screen*/
 @media screen and (max-width: 650px){
+
+    .advice{
+        display: block;
+        position: fixed;
+        z-index: 2000;
+        text-align: center;
+        width: 100vw;
+        background-color: #8D9B6A;
+        color: white;
+        margin-top: 0;
+    }
+
     .nav-container{
         display: none; /*Hide navigation bar*/
     }
 
+    .one{
+        margin: auto;
+    }
+
     /*align the logo to the centre of the screen*/
     .logo{
-        position: relative;
-        margin-bottom: 0;
-        padding: 10px;
-        text-align: center;
+        position: fixed;
+        left: 0;
+        padding-left: 10px;
+        top: 3%;
     }
 
     .one{
@@ -205,7 +404,7 @@ button:hover{
 
     .pre-order-btn{
         top: 50%;
-        left: 25%;
+        left: 20%;
     }
 
     .right-side-two{
@@ -213,7 +412,7 @@ button:hover{
     }
 
     .second-title, .two:hover .second-title, .left-side-two:hover .second-title{
-        top: 0;
+        top: 5%;
         font-size: 3em;
         position: absolute;
         text-align: left;
@@ -230,21 +429,90 @@ button:hover{
         text-align: right;
         font-size: 1.25em;
     }
-    
-    .advice{
-        display: block;
-        position: fixed;
-        margin: 0;
-        z-index: 101;
+
+    .three img:first-child{
+        display: none;
+    }
+
+    .three img{
         width: 100vw;
-        background-color: #8D9B6A;
-        text-align: center;
-        font-weight: 300;
+        height: auto;
+        left: 10%;
+    }
+
+    .three h1{
+        left: 0;
+        top: 52%;
+        padding-left: 10px;
+    }
+
+    .three p {
+        position: relative;
+        left: 0;
+        top: 50%;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .twinkie-bottle-2{
+        display: none;
+    }
+
+    .seductress-bottle{
+        width: 50%;
+        top: 0;
+        left: 20%;
+    }
+
+    .five h1{
+        top: 60%;
+        left: 0;
+        padding-left: 10px;
+        font-size: 2em;
+        text-align: right;
+        z-index: 100;
+        width: 12em;
+    }
+
+    .five button{
+        top: 78%;
+        left: 15%;
     }
 }
 
 @media screen and (max-height: 500px){
     .pre-order-btn{
         top: 70%;
+    }
+
+
+    .second-title, .two:hover .second-title, .left-side-two:hover .second-title{
+        top: 0;
+        font-size: 3em;
+        position: absolute;
+        text-align: left;
+    }
+
+    .second-info, .two:hover .second-info,.left-side-two:hover .second-info{
+        position: absolute;
+        display: block;
+        width: 23em;
+        top: 45%;
+        padding: 10px;
+        margin-left: 0;
+        letter-spacing: normal;
+        text-align: right;
+        font-size: 1em;
+    }
+
+    .four h1, .four p{
+        width: 70%;
+        left: 15%;
+    }
+
+    .five h1{
+        font-size: 2em;
+        width: auto;
+        left: 0;
     }
 }
