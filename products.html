@@ -3,9 +3,195 @@
     <head>
         <title>naur - products</title>
         <link href="styles.css" rel="stylesheet" type="text/css"/>
+
+        <!--Import fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200;300;400;500&family=Prata&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <!--Fav icon-->
+        <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
     </head>
-    <body>
-        <h1>Products</h1>
-        <a href="./index.html">home</a>     
+    <body class="product-body">
+        <!--Shopping cart button-->
+        <a href="./not-found.html" target="blank">
+            <button class="cart">
+                <img src="./images/Cart-01.svg"  alt="cart icon" width="55%" height="auto"/>
+            </button>
+        </a>
+
+        <!--Nav bar-->
+        <nav>
+            <a href="./index.html">
+                <h1 id="logo">naur</h1>
+            </a>
+        
+            <ul class="nav-container">
+                <li>
+                    <a href="./products.html" class="active-link">products</a>
+                </li>
+                <li>
+                    <a href="./not-found.html" target="_blank">about</a>
+                </li>
+                <li>
+                    <a href="./not-found.html" target="_blank">journal</a>
+                </li>
+                <li>
+                    <a href="./not-found.html" target="_blank">contact</a>
+                </li>     
+            </ul>
+        </nav>
+
+        <!--Intro for the product page-->
+        <div class="product-img-title">
+            <h1 style="
+                font-family: 'Lexend Peta', sans-serif; 
+                text-transform: uppercase;
+                font-size: 3em;
+                text-shadow: 1px 1px 20px #000000;"
+            >Products</h1>
+        </div>
+
+        <!--Product display-->
+        <div class="product-display">
+            <div class="product-item">
+                <div>
+                    <h1 style="text-align: center; ">
+                        -sd22-
+                    </h1>
+                    <p style="font-size: 0.75em;">
+                        freshcut flowers, <br> maiden's spirits, <br> fruity notes
+                    </p>
+                </div>
+                <img src="./images/product-item.jpg" width="200px" height="auto">
+                <p>
+                    seductress - 150ml
+                </p>
+                <button style="width: 140px;">ADD TO CART</button>
+            </div>
+
+            <div class="product-item">
+                <div>
+                    <h1 style="text-align: center; ">
+                        -twi-
+                    </h1>
+                    <p style="font-size: 0.75em;">
+                        orange blossom, <br> sweet spices, <br> lavender & aromatic herbs
+                    </p>
+                </div>
+                <img src="./images/product-item.jpg" width="200px" height="auto">
+                <p>
+                    twinkie - 150ml
+                </p>
+                <button style="width: 140px;">ADD TO CART</button>
+            </div>
+
+            <div class="product-item">
+                <div>
+                    <h1 style="text-align: center; ">
+                        -cas-
+                    </h1>
+                    <p style="font-size: 0.75em;">
+                        oakmoss & amber, <br> dry woods, <br> casket vibe
+                    </p>
+                </div>
+                <img src="./images/product-item.jpg" width="200px" height="auto">
+                <p>
+                    casketica - 150ml
+                </p>
+                <button style="width: 140px;">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-display">
+            <div class="product-item">
+                <div>
+                    <h1 style="text-align: center; ">
+                        -sset-
+                    </h1>
+                    <p style="font-size: 0.75em;">
+                        a 30ml sample set of 3 scents <br> for you to try on
+                    </p>
+                </div>
+                <img src="./images/seductress copy.png" width="125px" height="auto">
+                <p>
+                    Sample set 30ml
+                </p>
+                <button style="width: 140px;">ADD TO CART</button>
+            </div>
+        </div>
+        
+        <!--Footer-->
+        <footer style="padding-top: 1px; position: relative;">
+            <!--Sign up for emails-->
+            <div style="
+            text-align: center; 
+            margin-top: 100px;">
+                <h1>
+                    sounds interesting?
+                </h1>
+                <p>
+                    Sign up to our latest emails and newsletter! 
+                    <br>
+                    We will keep you on the loop once <span style="font-family: 'Lexend Peta', sans-serif;"> naur </span> officially launches.
+                </p>
+
+                <div>
+                    <input placeholder="your email here..">
+                    <button class="sign-up"> &#8594;</button>
+                </div>
+            </div>
+            <!--Horizontal break-->
+            <hr style="margin-top: 40px; border-bottom: 0.5px solid rgb(255, 255, 255);">
+
+            <div style="text-align: center;">
+                <ul class="socials">
+                    <li>
+                        <a href="./not-found.html" target="_blank">ig</a>
+                    </li>
+
+                    <li>
+                        <a href="./not-found.html" target="_blank">fb</a>
+                    </li>
+
+                    <li>
+                        <a href="./not-found.html" target="_blank">@</a>
+                    </li>
+                </ul>
+
+
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="./products.html">product</a>
+                    </li>
+                    <li>
+                        <a href="./not-found.html">about</a>
+                    </li>
+                    <li>
+                        <a href="./not-found.html">journal</a>
+                    </li>
+                    <li>
+                        <a href="./not-found.html">contact</a>
+                    </li>     
+                </ul>
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--AUTHOR-->
+            <p class="author">
+                &copy; 2022 naur perfume inc. <br> Design by 
+                <a 
+                style="color: white;"
+                href="https://www.instagram.com/ttk.daniel/"
+                target="_blank">
+                    <strong>Daniel Tran</strong>
+                </a>
+            </p>
+        </footer>
     </body>
 </html>

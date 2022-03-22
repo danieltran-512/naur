@@ -2,11 +2,12 @@
 Colour scheme:
 Platinum: #E8DFE0
 Turtle Green #8D9B6A
-Gray-blue #8A9EA7
 Tan #DAB692
-Coconut #8F5B34
 */
 
+
+/*========================================================================
+GLOBAl ATTRIBUTES*/
 *{
     font-family: 'Prata', serif;
 }
@@ -15,6 +16,33 @@ html, body{
     margin: 0;
     background-color: #8D9B6A;
 }
+
+.product-body{
+    background-color: #E8DFE0;
+}
+
+/*========================================================================
+BUTTON STYLING*/
+
+button{
+    color: rgb(255, 255, 255);
+    background-color: #8D9B6A;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Lexend Peta', sans-serif;
+    transition: 0.5s;
+    width: 300px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/*========================================================================
+NAVIGATION BAR*/
 
 /*make the navigation bar stick to the top*/
 nav{
@@ -28,6 +56,10 @@ nav{
 .nav-container{
     margin: 0;
     text-align: center;
+}
+
+.product-body .nav-container{
+    background-color: #E8DFE0;
 }
 
 a {
@@ -47,7 +79,7 @@ a {
     /* color: white; */
 }
 
-.logo:hover{
+#logo:hover{
     font-family: 'Prata', sans-serif;
     font-weight: 400;
     letter-spacing: 10px;
@@ -74,6 +106,14 @@ a {
     color: white; */
     padding: 0 10px 3px 10px;
 }
+
+.active-link, .active-link:hover{
+    font-family:  'Lexend Peta', sans-serif;
+    font-weight: 400 !important;
+}
+
+/*========================================================================
+LANDING PAGE*/
 
 /*stick the container*/
 .container{
@@ -267,6 +307,9 @@ a {
     z-index: 6;
 }
 
+
+/*========================================================================
+FOOTER*/
 footer{
     background-color: #8D9B6A;
     color: white;
@@ -294,23 +337,7 @@ footer input::placeholder{
     opacity: 0.5;
 }
 
-/*Button style*/
-button{
-    color: rgb(255, 255, 255);
-    background-color: #8D9B6A;
-    border: none;
-    text-transform: uppercase;
-    font-family: 'Lexend Peta', sans-serif;
-    transition: 0.5s;
-    width: 300px;
-    height: 40px;
-}
 
-button:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
 
 .pre-order-btn{
     position: absolute;
@@ -371,11 +398,35 @@ footer a {
 .author{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     padding: 10px;
     font-size: 0.7em;
-    text-align: right;
+    text-align: left;
 }
+
+/*========================================================================
+CART ICON*/
+
+.cart{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 0.5px 0.5px 200px black;
+}
+
+.cart:hover{
+    background-color: #DAB692;
+}
+
+/*========================================================================
+PAGE NOT FOUND STYLE*/
 
 .not-found{
     height: 100vh;
@@ -388,7 +439,70 @@ footer a {
     background-position: center;
 }
 
-/*Responsive screen*/
+
+/*========================================================================
+PRODUCT PAGE*/
+
+/*Intro for the product page*/
+.product-img-title{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/product-page.jpg");
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/*Container for the product items*/
+.product-display{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+.product-display:last-of-type{
+    margin-bottom: 40px;
+}
+
+.product-item{
+    position: relative;
+    /* border: 1px solid black;  */
+    background-color: white;
+    text-align: center; 
+    flex: 0 0 300px;
+    flex-wrap: wrap;
+
+    width: 300px; 
+    padding: 10px; 
+    margin: 20px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.product-item div{
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    top: 0%;
+    left: 10%;
+    transition: 0.5s;
+}
+
+.product-item:hover div{
+    opacity: 0;
+}
+
+
+/*========================================================================
+RESPONSIVE - breakpoint: 760px */
 @media screen and (max-width: 760px){
 
     .advice{
@@ -519,8 +633,28 @@ footer a {
     .mobile-menu ul li{
         padding: 5px;
     }
+
+    .product-body #logo{
+        position: relative;
+        margin: 0;
+    }
+
+    .product-body nav{
+        position: static;
+        text-align: center;
+    }
+
+    .product-display{
+        justify-content: center;
+    }
+
+    .product-item div{
+        display: none;
+    }
 }
 
+/*========================================================================
+RESPONSIVE - breakpoint height: 500px*/
 @media screen and (max-height: 500px){
     .pre-order-btn{
         top: 70%;
