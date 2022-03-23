@@ -8,3 +8,6 @@ This website is just purely HTML and CSS, and the purpose of creating this proje
 # Getting started
 Only 2 pages of this website are accessible: **Home page** and **Products**. There's also an error 404 page that redirects your to the main page. 
 You can either clone this repository to your local machine and run the **index.html** file or just simply click <a href="https://danieltran-512.github.io/naur/" target="_blank">on this</a>
+
+#Author
+Designed and compiled by Daniel Tran
