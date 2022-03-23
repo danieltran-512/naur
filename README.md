@@ -2,6 +2,7 @@
 _Disclaimer_: the product used in this project is completely fictional. 
 
 naur is a perfume website that sells a special scent of perfume that marks a remarkable milestone in the perfume-making industry. The website focuses on motion and graphics, large text, and is responsive to all screen sizes.
+This is a responsive website that can run smoothly on small screens. However, for best experience, please consider using a computer with full width or at least 800px wide.
 
 This website is just purely HTML and CSS, and the purpose of creating this project is to explore the use of CSS in modern web design.
 
