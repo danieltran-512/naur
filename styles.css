@@ -24,7 +24,7 @@ html, body{
 /*========================================================================
 BUTTON STYLING*/
 
-button{
+button, .btn{
     color: rgb(255, 255, 255);
     background-color: #8D9B6A;
     border: none;
@@ -35,7 +35,13 @@ button{
     height: 40px;
 }
 
-button:hover{
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover, .btn:hover{
     background-color: white;
     color: black;
     cursor: pointer;
@@ -259,6 +265,13 @@ LANDING PAGE*/
     background-color: #E8DFE0;
 }
 
+.explore-btn{
+    z-index: 500;
+    position: relative;
+    top: 60%;
+    left: 40%;
+}
+
 .twinkie-bottle{
     width: 60%;
     top: 28%;
@@ -462,7 +475,7 @@ PRODUCT PAGE*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: left;
+    align-items:center;
 }
 
 .product-display:last-of-type{
